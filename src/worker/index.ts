@@ -1,9 +1,7 @@
 import { Hono } from "hono";
 
 type Env = {
-  Bindings: {
-    FirebaseAPI: string;
-  };
+  FirebaseAPI: string;
 };
 
 const app = new Hono<{ Bindings: Env }>();
